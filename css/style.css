@@ -8,10 +8,32 @@ body {
   overflow-x: hidden;
 }
 
-/* ---------> Global Classes <---------- */
+/* Creating Variables */
+
+:root {
+  /* theme font-family */
+  --Abel: "Abel", cursive;
+  --Anton: "Anton", cursive;
+  --Josefin: "Josefin", cursive;
+  --Lexend: "Lexend", cursive;
+  --Livvic: "Livvic", cursive;
+
+  /* Variables for the colors. */
+  --text-gray: #3f4954;
+  --text-light: #686666da;
+  --bg-color: #0f0f0f;
+  --white: #ffffff;
+  --midnight: #104f55;
+
+  /* Gradient colors */
+  --sky: linear-gradient(120deg, #a1c4fd, #c2e9fb 100%);
+}
+
+/*----------------------------------------- <<< Global Styling >>> ----------------------------------------------*/
 
 a {
   text-decoration: none;
+  color: var(--text-gray);
 }
 
 .flex-row {
@@ -24,37 +46,65 @@ ul {
   list-style-type: none;
 }
 
-/* <--------- Global Classes ----------> */
+/*----------------------------------------- >>> Global Styling <<< ----------------------------------------------*/
+
+/*----------------------------------------- <<< Navbar Styling >>> ----------------------------------------------*/
 
 .nav {
-  background: white;
-  padding: 0 2rem;
-  height: 0rem;
-  min-height: 40vh;
-  overflow: hidden;
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 40vh;
+    overflow: hidden;
 }
 
 .nav .nav-menu {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
 .nav .nav-items {
-  display: flex;
-  margin: 0;
+    display: flex;
+    margin: 0;
 }
 
 .nav .nav-items .nav-link {
     padding: 1.6rem;
     font-size: 1.1rem;
     position: relative;
+    font-family: var(--Abel);
+}
+.nav .nav-items .nav-link:hover {
+    background-color: var(--midnight);
+}
+.nav .nav-items .nav-link:hover a{
+    color: white;
 }
 
 .nav .social {
     padding: 1.4rem 0;
 }
 
-.nav .nav-brand a {
-  font-size: 1.6rem;
-  padding: 1rem 0;
-  font-family: Abel, cursive;
+.nav .social i {
+    padding: 0 0.2rem;
 }
+.nav .social i:hover {
+    color: #a1c4cf;
+}
+
+.nav .nav-brand a {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    font-family: var(--Lexend);
+}
+
+/*----------------------------------------- >>> Navbar Styling <<< ----------------------------------------------*/
+
+/*----------------------------------------- <<< Viewport less than or equal to 750px >>> ----------------------------------------------*/
+
+@media only screen and (max-width: 750px) {
+    .nav {
+        background: black;
+    }
+}
+
+/*----------------------------------------- >>> Viewport less than or equal to 750px <<< ----------------------------------------------*/
