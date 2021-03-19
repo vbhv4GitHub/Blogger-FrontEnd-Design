@@ -1,3 +1,6 @@
+@import url(../css/fonts.css);
+/* Importing fonts - Abel, Anton, Josefin, Lexend, and Livvic */
+
 html,
 body {
   margin: 0;
@@ -14,7 +17,6 @@ a {
 .flex-row {
   display: flex;
   flex-direction: row;
-  /* Flex wrap helps with responsiveness. */
   flex-wrap: row;
 }
 
@@ -54,4 +56,5 @@ ul {
 .nav .nav-brand a {
   font-size: 1.6rem;
   padding: 1rem 0;
+  font-family: Abel, cursive;
 }
