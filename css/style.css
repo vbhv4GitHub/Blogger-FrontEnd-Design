@@ -29,7 +29,7 @@ body {
   --sky: linear-gradient(120deg, #a1c4fd, #c2e9fb 100%);
 }
 
-/*----------------------------------------- <<< Global Styling >>> ----------------------------------------------*/
+/*#----------------------------------------- <<< Global Styling >>> ----------------------------------------------*/
 
 a {
   text-decoration: none;
@@ -46,65 +46,98 @@ ul {
   list-style-type: none;
 }
 
-/*----------------------------------------- >>> Global Styling <<< ----------------------------------------------*/
+/*#----------------------------------------- >>> Global Styling <<< ----------------------------------------------*/
 
-/*----------------------------------------- <<< Navbar Styling >>> ----------------------------------------------*/
+/*#----------------------------------------- <<< Navbar Styling >>> ----------------------------------------------*/
 
 .nav {
-    background: white;
-    padding: 0 2rem;
-    height: 0rem;
-    min-height: 40vh;
-    overflow: hidden;
+  background: white;
+  padding: 0 2rem;
+  height: 0rem;
+  min-height: 20vh;
+  overflow: hidden;
+  transition: height 1s ease-in-out;
 }
 
 .nav .nav-menu {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .nav .nav-items {
-    display: flex;
-    margin: 0;
+  display: flex;
+  margin: 0;
 }
 
 .nav .nav-items .nav-link {
-    padding: 1.6rem;
-    font-size: 1.1rem;
-    position: relative;
-    font-family: var(--Abel);
+  padding: 1.6rem;
+  font-size: 1.1rem;
+  position: relative;
+  font-family: var(--Abel);
 }
 .nav .nav-items .nav-link:hover {
-    background-color: var(--midnight);
+  background-color: var(--midnight);
 }
-.nav .nav-items .nav-link:hover a{
-    color: white;
+.nav .nav-items .nav-link:hover a {
+  color: white;
 }
 
 .nav .social {
-    padding: 1.4rem 0;
+  padding: 1.4rem 0;
 }
 
 .nav .social i {
-    padding: 0 0.2rem;
+  padding: 0 0.2rem;
 }
 .nav .social i:hover {
-    color: #a1c4cf;
+  color: #a1c4cf;
 }
 
-.nav .nav-brand a {
-    font-size: 1.6rem;
-    padding: 1rem 0;
-    font-family: var(--Lexend);
+.nav .nav-menu .nav-brand a {
+  font-size: 1.6rem;
+  /* padding: 1rem 0; */
+  /* margin: 1rem 0; */
+  font-family: var(--Lexend);
 }
 
-/*----------------------------------------- >>> Navbar Styling <<< ----------------------------------------------*/
-
-/*----------------------------------------- <<< Viewport less than or equal to 750px >>> ----------------------------------------------*/
-
-@media only screen and (max-width: 750px) {
-    .nav {
-        background: black;
-    }
+.nav .nav-menu .nav-brand {
+  padding: 1rem 0;
 }
 
-/*----------------------------------------- >>> Viewport less than or equal to 750px <<< ----------------------------------------------*/
+.nav .toggle_collapse {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle_collapse .toggle_icon {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle_collapse .toggle_icon i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.collapse {
+  height: 30rem;
+}
+/*#----------------------------------------- >>> Navbar Styling <<< ----------------------------------------------#*/
+
+/*#----------------------------------------- <<< Viewport less than or equal to 750px >>> ----------------------------------------------*/
+
+@media only screen and (max-width: 787px) {
+  .nav .nav-menu,
+  .nav .nav-items {
+    flex-direction: column;
+  }
+
+.nav .toggle_collapse {
+    display: initial;
+}
+}
+
+/*#----------------------------------------- >>> Viewport less than or equal to 750px <<< ----------------------------------------------#*/
