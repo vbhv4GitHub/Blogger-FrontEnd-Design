@@ -46,6 +46,33 @@ ul {
   list-style-type: none;
 }
 
+h1 {
+  font-family: var(--Lexend);
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-family: var(--Abel);
+  font-size: 1.3rem;
+}
+
+h2 {
+  font-family: var(--Lexend);
+}
+
+button.btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: var(--Livvic);
+  cursor: pointer;
+}
+
+span {
+  font-family: var(--Abel);
+}
+
 /*#----------------------------------------- >>> Global Styling <<< ----------------------------------------------*/
 
 /*#----------------------------------------- <<< Navbar Styling >>> ----------------------------------------------*/
@@ -54,7 +81,7 @@ ul {
   background: white;
   padding: 0 2rem;
   height: 0rem;
-  min-height: 20vh;
+  min-height: 13vh;
   overflow: hidden;
   transition: height 1s ease-in-out;
 }
@@ -104,28 +131,102 @@ ul {
 }
 
 .nav .toggle_collapse {
-    position: absolute;
-    top: 0;
-    width: 90%;
-    cursor: pointer;
-    display: none;
+  position: absolute;
+  top: 0;
+  width: 90%;
+  cursor: pointer;
+  display: none;
 }
 
 .nav .toggle_collapse .toggle_icon {
-    display: flex;
-    justify-content: flex-end;
-    padding: 1.7rem 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
 }
 
-.nav .toggle_collapse .toggle_icon i{
-    font-size: 1.4rem;
-    color: var(--text-gray);
+.nav .toggle_collapse .toggle_icon i {
+  font-size: 1.4rem;
+  color: var(--text-gray);
 }
 
 .collapse {
   height: 30rem;
 }
 /*#----------------------------------------- >>> Navbar Styling <<< ----------------------------------------------#*/
+
+/*#----------------------------------------- <<< Main Content >>> ----------------------------------------------#*/
+
+/*#----------------------------------------- <<< Site Title >>> ----------------------------------------------#*/
+main .site-title {
+  background: url("../assets/Background-image.png");
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+}
+
+main .site-title .site-background {
+  padding-top: 10rem;
+  text-align: center;
+  color: var(--white);
+}
+
+main .site-title h1,
+h3 {
+  margin: 0.3rem;
+}
+
+main .site-title .btn {
+  margin: 1.8rem;
+  background: var(--sky);
+}
+
+main .site-title .btn:hover {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+/*#----------------------------------------- >>> Site Title <<< ----------------------------------------------#*/
+
+/*#----------------------------------------- <<< Blog Carousel >>> ----------------------------------------------#*/
+
+main .blog {
+  background: url("../assets/Abract01.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+}
+
+main .blog .blog-post {
+  padding-top: 6rem;
+}
+
+main .blog-post .blog-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 3rem 2rem;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .blog-content .blog-title {
+  padding: 2rem 0;
+}
+
+main .blog .btn-blog {
+  padding: 0.7rem 2rem;
+  background: var(--sky);
+  margin: 0.5rem;
+}
+
+main .blog-content span {
+  display: block;
+}
+/*#----------------------------------------- >>> Blog Carousel <<< ----------------------------------------------#*/
+
+/*#----------------------------------------- >>> Main Content <<< ----------------------------------------------#*/
 
 /*#----------------------------------------- <<< Viewport less than or equal to 750px >>> ----------------------------------------------*/
 
@@ -135,9 +236,9 @@ ul {
     flex-direction: column;
   }
 
-.nav .toggle_collapse {
+  .nav .toggle_collapse {
     display: initial;
-}
+  }
 }
 
 /*#----------------------------------------- >>> Viewport less than or equal to 750px <<< ----------------------------------------------#*/
