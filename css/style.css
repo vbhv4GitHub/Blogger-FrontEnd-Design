@@ -273,7 +273,8 @@ main .post-content {
   width: 100%;
 }
 
-main .site-content .post-content > .post-image, .post-title {
+main .site-content .post-content > .post-image,
+.post-title {
   padding: 1rem 2rem;
   position: relative;
 }
@@ -321,19 +322,40 @@ main .post-content .post-title a {
   margin: 4rem 0;
 }
 
-.site-content .pagination a{
-  padding: .6rem .9rem;
+.site-content .pagination a {
+  padding: 0.6rem 0.9rem;
   border-radius: 2rem;
-  margin: 0 .3rem;
+  margin: 0 0.3rem;
   font-family: var(--Lexend);
 }
 
-.site-content .pagination .pages{
+.site-content .pagination .pages {
   background: var(--text-gray);
   color: white;
 }
 
 /*#----------------------------------------- >>> Site-Content <<< ----------------------------------------------#*/
+
+/*#----------------------------------------- <<< Sidebar >>> ----------------------------------------------#*/
+
+.site-content > .sidebar .category-list {
+  font-family: var(--Livvic);
+}
+
+.site-content > .sidebar .category-list .list-items {
+  background: var(--sky);
+  padding: 0.4rem 1rem;
+  margin: 0.8rem 0;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-content > .sidebar .category-list .list-items a {
+  color: black;
+}
+
+/*#----------------------------------------- >>> Sidebar <<< ----------------------------------------------#*/
 
 /*#----------------------------------------- >>> Main Content <<< ----------------------------------------------#*/
 
