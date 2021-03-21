@@ -39,7 +39,7 @@ a {
 .flex-row {
   display: flex;
   flex-direction: row;
-  flex-wrap: row;
+  flex-wrap: wrap;
 }
 
 ul {
@@ -363,38 +363,52 @@ main .post-content .post-title a {
   padding-top: 8rem;
 }
 
-.site-content .sidebar .popular-posts .post-info{
-  padding: .4rem .1rem !important;
+.site-content .sidebar .popular-posts .post-info {
+  padding: 0.4rem 0.1rem !important;
   bottom: 0rem !important;
   left: 1.5rem !important;
   border-radius: 0rem !important;
   background: white !important;
 }
 
-.site-content .sidebar .popular-posts .post-title a{
+.site-content .sidebar .popular-posts .post-title a {
   font-size: 1rem;
 }
 
-.site-content .sidebar .newsletter{
-  padding-top: 3rem;
+.site-content .sidebar .newsletter {
+  padding-top: 10rem;
 }
 
-.site-content .sidebar .newsletter .form-element{
-  padding: .5rem 2rem;
+.site-content .sidebar .newsletter .form-element {
+  padding: 0.5rem 2rem;
 }
-.site-content .sidebar .newsletter .input-element{ 
+
+.site-content .sidebar .newsletter .input-element {
   width: 80%;
   height: 1.9rem;
-  padding: .3rem .5rem;
+  padding: 0.3rem 0.5rem;
   font-family: var(--Lexend);
   font-size: 1rem;
 }
-.site-content .sidebar .newsletter .form-btn{
+
+.site-content .sidebar .newsletter .form-btn {
   border-radius: 0;
-  padding: .8rem 35%;
+  padding: 0.8rem 35%;
   margin: 1rem 0;
   background: var(--sky);
- }
+}
+
+.site-content .sidebar .popular-tags {
+  padding: 4rem 0;
+}
+
+.site-content .sidebar .popular-tags .tags .tag {
+  background: var(--sky);
+  padding: 0.4rem 1rem;
+  border-radius: 3rem;
+  margin: 0.4rem 0.6rem;
+}
+
 /*#----------------------------------------- >>> Sidebar <<< ----------------------------------------------#*/
 
 /*#----------------------------------------- >>> Main Content <<< ----------------------------------------------#*/
