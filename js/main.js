@@ -49,4 +49,8 @@ $(document).ready(function () {
       1300
     );
   });
+
+  // AOS initializaton
+  AOS.init();
 });
+
